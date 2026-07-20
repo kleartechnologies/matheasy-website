@@ -1,0 +1,44 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/Matheasy Landing.dc.html" },
+    { "source": "/privacy", "destination": "/privacy.dc.html" },
+    { "source": "/terms", "destination": "/terms.dc.html" },
+    { "source": "/support", "destination": "/support.dc.html" },
+    { "source": "/delete-account", "destination": "/delete-account.dc.html" }
+  ],
+  "redirects": [
+    { "source": "/Matheasy Landing.dc.html", "destination": "/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/privacy.dc.html", "destination": "/privacy", "permanent": true },
+    { "source": "/terms.dc.html", "destination": "/terms", "permanent": true },
+    { "source": "/support.dc.html", "destination": "/support", "permanent": true },
+    { "source": "/delete-account.dc.html", "destination": "/delete-account", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/support.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    }
+  ]
+}

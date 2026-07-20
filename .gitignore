@@ -1,0 +1,19 @@
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+.thumbnail
+*.swp
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Node (not used today, future-proofing)
+node_modules/
+
+# Original oversized PNGs — replaced by optimized .jpg (kept out of the repo)
+assets/scanner-w.png
+assets/solution-w.png
+
+# Backups created during video re-encoding
+assets/*.orig.mp4

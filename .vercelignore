@@ -1,0 +1,11 @@
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+.thumbnail
+
+# Unreferenced source material
+uploads/
+
+# Original oversized PNGs — replaced by optimized .jpg versions in the pages
+assets/scanner-w.png
+assets/solution-w.png
