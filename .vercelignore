@@ -9,3 +9,7 @@ uploads/
 # Original oversized PNGs — replaced by optimized .jpg versions in the pages
 assets/scanner-w.png
 assets/solution-w.png
+
+# Pre-optimization video backups (kept locally, never deploy)
+assets/scanner.orig.mp4
+assets/solution-hero.orig.mp4
